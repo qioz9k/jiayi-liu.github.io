@@ -79,9 +79,19 @@ layout: default
         </div>
 
         <div class="section">
-            <h2>Course Work</h2>
-            <p>Below is a link to my Practical 3 assignment:</p>
-            <ul>
+  <h2>Course Work</h2>
+  <!-- 把原有的"is a link"改成"are links"，适配多个链接 -->
+  <p>Below are links to my Practical assignments:</p>
+  <ul>
+    <li><a href="Practical3/index.md">Practical 3 Assignment</a></li>
+    <!-- 新增Practical4链接，路径指向仓库里的Practical4文件夹 -->
+    <li><a href="Practical4/">Practical 4 Assignment</a></li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 Jiayi Liu. All rights reserved.</p>
+</div>
                 <li><a href="Practical3/index.md">Practical 3 Assignment</a></li>
             </ul>
         </div>
