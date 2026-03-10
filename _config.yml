@@ -1,0 +1,11 @@
+title: "Jiayi Liu's Personal Homepage"
+description: "Welcome to my personal website. I am a student from Zhejiang University, ZJE Institute. This website is used to record my study, life and academic exploration."
+author: "Jiayi Liu"
+name: "Jiayi Liu"
+email: ""
+institution: "Zhejiang University (ZJE Institute)"
+location: "Zhejiang, China"
+
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme

@@ -1,3 +1,7 @@
+---
+title: Jiayi Liu's Personal Homepage
+layout: default
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +74,7 @@
 
         <div class="section">
             <h2>About Me</h2>
-            <p>My name is Jiayi Liu, and I am an IBI1 student at the Zhejiang University - University of Edinburgh (ZJE) Institute.</p>
+            <p>My name is Jiayi Liu, and I am an BMS student at the Zhejiang University - University of Edinburgh (ZJE) Institute.</p>
             <p>You can learn more about the ZJE Institute by visiting their official website <a href="https://zje.zju.edu.cn/zje/main.htm" target="_blank">here</a>.</p>
         </div>
 
