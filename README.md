@@ -5,7 +5,7 @@ This is my first git project, created for the IBI1 course at the **Zhejiang Univ
 ---
 
 ## About Me
-My name is Jiayi Liu, and I am an IBI1 student at the ZJE Institute.
+My name is Jiayi Liu, and I am an BMS student at the ZJE Institute.
 
 You can learn more about the ZJE Institute by visiting their official website:
 [Zhejiang University - University of Edinburgh (ZJE) Institute](https://zje.zju.edu.cn/zje/main.htm)
@@ -13,10 +13,14 @@ You can learn more about the ZJE Institute by visiting their official website:
 ---
 
 ## Course Work
+Below are links to my IBI1 practical assignments:
 
-Below is a link to my Practical 3 assignment:
-
+### Practical 3
 - [Practical 3 Assignment](Practical3/index.md)
+
+### Practical 4 (Python Programming Exercises)
+- [Practical 4 Folder](Practical4/)
+  
 
 ---
 
