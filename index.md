@@ -67,38 +67,31 @@ layout: default
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My Personal Website</h1>
-        <p class="subtitle">This is my first page built with GitHub Pages for the IBI1 course at Zhejiang University - University of Edinburgh (ZJE) Institute.</p>
+  <div class="container">
+    <h1>Welcome to My Personal Website</h1>
+    <p class="subtitle">This is my first page built with GitHub Pages for the IBI1 course at Zhejiang University - University of Edinburgh (ZJE) Institute.</p>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>My name is Jiayi Liu, and I am an BMS student at the Zhejiang University - University of Edinburgh (ZJE) Institute.</p>
-            <p>You can learn more about the ZJE Institute by visiting their official website <a href="https://zje.zju.edu.cn/zje/main.htm" target="_blank">here</a>.</p>
-        </div>
-
-        <div class="section">
-  <h2>Course Work</h2>
-  <!-- 把原有的"is a link"改成"are links"，适配多个链接 -->
-  <p>Below are links to my Practical assignments:</p>
-  <ul>
-    <li><a href="Practical3/index.md">Practical 3 Assignment</a></li>
-    <!-- 新增Practical4链接，路径指向仓库里的Practical4文件夹 -->
-    <li><a href="Practical4/">Practical 4 Assignment</a></li>
-  </ul>
-</div>
-
-<div class="footer">
-  <p>&copy; 2025 Jiayi Liu. All rights reserved.</p>
-</div>
-                <li><a href="Practical3/index.md">Practical 3 Assignment</a></li>
-            </ul>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2025 Jiayi Liu. All rights reserved.</p>
-        </div>
+    <div class="section">
+      <h2>About Me</h2>
+      <p>My name is Jiayi Liu, and I am an BMS student at the Zhejiang University - University of Edinburgh (ZJE) Institute.</p>
+      <p>You can learn more about the ZJE Institute by visiting their official website <a href="https://zje.zju.edu.cn/zje/main.htm" target="_blank">here</a>.</p>
     </div>
+
+    <div class="section">
+      <h2>Course Work</h2>
+      <p>Below are links to my Practical assignments:</p>
+      <ul>
+        <li><a href="Practical3/index.md">Practical 3 Assignment</a></li>
+        <!-- 新增Practical4链接，路径指向仓库里的Practical4文件夹 -->
+        <li><a href="Practical4/">Practical 4 Assignment</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Jiayi Liu. All rights reserved.</p>
+    </div>
+  </div>
 </body>
 </html>
