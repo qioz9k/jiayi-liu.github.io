@@ -24,6 +24,9 @@ Below are links to my IBI1 practical assignments:
 ### Practical 5 (Working With Number)
 - [Practical 5 Folder](Practical5/)
   
+### Practical5 
+- [Practical 5 Folder](Practiacl5/)
+
 
 ---
 
