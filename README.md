@@ -20,6 +20,9 @@ Below are links to my IBI1 practical assignments:
 
 ### Practical 4 (Python Programming Exercises)
 - [Practical 4 Folder](Practical4/)
+
+### Practical 5 (Working With Number)
+- [Practical 5 Folder](Practical5/)
   
 
 ---
