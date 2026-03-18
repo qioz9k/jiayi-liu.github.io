@@ -24,7 +24,7 @@ Below are links to my IBI1 practical assignments:
 ### Practical5 
 - [Practical 5 Folder](Practiacl5/)
 
-  
+
 ---
 
 &copy; 2025 Jiayi Liu. All rights reserved.
