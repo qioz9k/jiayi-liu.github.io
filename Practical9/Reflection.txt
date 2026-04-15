@@ -1,0 +1,6 @@
+Practical 9 Reflection
+1. Difficulty: The basic SIR was straightforward, but the spatial SIR was more challenging.
+2. Enjoyed parts: I liked observing how infection spreads and how vaccination reduces infections.
+3. Learned: How to implement stochastic SIR models, use numpy random functions, and visualize results.
+4. Problems: I had some small bugs in the spatial model neighbour checking, but fixed them.
+5. Most important thing: Understanding how probabilistic models work in disease spread simulation.
