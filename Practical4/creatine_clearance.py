@@ -1,56 +1,53 @@
-
 """
-伪代码（实验文档要求）：
-1. 定义输入变量：年龄(age)、体重(weight)、性别(gender)、肌酐浓度(Cr)
-2. 输入合法性校验（按优先级）：
-   - 年龄校验：age < 100
-   - 体重校验：20 < weight < 80
-   - 肌酐校验：0 < Cr < 100
-   - 性别校验：gender为male/female（兼容大小写）
-3. 校验不通过：打印具体错误信息（明确指出哪个变量出错）
-4. 校验通过：计算CrCl：
-   - 基础公式：CrCl = [(140 - 年龄) × 体重] / (72 × 肌酐浓度)
-   - 女性修正：CrCl × 0.85
-5. 打印计算结果（保留2位小数，更直观）
+Pseudocode (Lab Document Requirement):
+1. Define input variables: age, weight, gender, Creatinine (Cr)
+2. Validate input legitimacy (by priority):
+   - Age validation: age < 100
+   - Weight validation: 20 < weight < 80
+   - Creatinine validation: 0 < Cr < 100
+   - Gender validation: gender is male/female (case insensitive)
+3. If validation fails: print specific error message (clearly indicate which variable is wrong)
+4. If validation passes: calculate CrCl:
+   - Basic formula: CrCl = [(140 - age) × weight] / (72 × Cr)
+   - Female adjustment: CrCl × 0.85
+5. Print calculation result (2 decimal places for clarity)
 """
 
-
-age = 45               # 年龄（岁）
-weight = 65            # 体重（kg）
-gender = "female"      # 性别（male/female，兼容大写如Female）
-cr = 80                # 肌酐浓度（μmol/l）
-
+age = 45               # Age (years)
+weight = 65            # Weight (kg)
+gender = "female"      # Gender (male/female, case-insensitive e.g. Female)
+cr = 80                # Creatinine concentration (μmol/l)
 
 # age = 101
-# weight = 18  # 体重<20kg
-# cr = 105     # 肌酐>100μmol/l
-# gender = "man" # 性别错误
+# weight = 18  # Weight < 20kg
+# cr = 105     # Creatinine > 100μmol/l
+# gender = "man" # Invalid gender
 
-error_msg = ""  # 初始化错误提示字符串
+error_msg = ""  # Initialize error message string
 
-# 1. 校验年龄（优先级1）
+# 1. Validate age (Priority 1)
 if age >= 100:
-    error_msg = f"年龄错误：{age}岁 ≥ 100岁，需小于100岁"
-# 2. 校验体重（优先级2）
+    error_msg = f"Age error: {age} years ≥ 100, must be less than 100"
+# 2. Validate weight (Priority 2)
 elif not (20 < weight < 80):
-    error_msg = f"体重错误：{weight}kg，需在20-80kg之间（不含边界）"
-# 3. 校验肌酐浓度（优先级3）
+    error_msg = f"Weight error: {weight}kg, must be between 20-80kg (exclusive)"
+# 3. Validate creatinine concentration (Priority 3)
 elif not (0 < cr < 100):
-    error_msg = f"肌酐浓度错误：{cr}μmol/l，需在0-100μmol/l之间（不含边界）"
-# 4. 校验性别（优先级4，兼容大小写）
+    error_msg = f"Cr error: {cr}μmol/l, must be between 0-100μmol/l (exclusive)"
+# 4. Validate gender (Priority 4, case-insensitive)
 elif gender.lower() not in ["male", "female"]:
-    error_msg = f"性别错误：{gender}，只能为male或female（大小写均可）"
+    error_msg = f"Gender error: {gender}, must be male or female (case insensitive)"
 
 if error_msg == "":
-    # 基础公式计算CrCl
+    # Calculate CrCl using the basic formula
     crcl = (140 - age) * weight / (72 * cr)
-    # 女性需乘以0.85（统一转小写避免大小写问题）
+    # Female adjustment: multiply by 0.85 (convert to lowercase to avoid case issues)
     if gender.lower() == "female":
         crcl = crcl * 0.85
-    # 输出结果（保留2位小数，符合实验输出要求）
-    print("=== 肌酐清除率（CrCl）计算结果 ===")
-    print(f"输入参数：年龄={age}岁，体重={weight}kg，性别={gender}，肌酐={cr}μmol/l")
+    # Print result (2 decimal places, meets lab output requirements)
+    print("=== Creatinine Clearance (CrCl) Calculation Result ===")
+    print(f"Input parameters: age={age}y, weight={weight}kg, gender={gender}, Cr={cr}μmol/l")
     print(f"CrCl = {crcl:.2f} ml/min")
 else:
-    # 校验失败，输出具体错误
-    print("❌ 输入不合法：", error_msg)
+    # Validation failed, print specific error
+    print("❌ INVALID INPUT:", error_msg)
